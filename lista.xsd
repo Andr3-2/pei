@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://estg.ipp.pt/lista.xsd" 
+targetNamespace="http://estg.ipp.pt/lista.xsd" 
+xmlns:co="http://estg.ipp.pt/commontypes.xsd" 
+xmlns:f="http://estg.ipp.pt/familia.xsd" 
+xmlns:a="http://estg.ipp.pt/agendamentos.xsd" 
+elementFormDefault="qualified">
+
+    <xs:import schemaLocation="commontypes.xsd" namespace="http://estg.ipp.pt/commontypes.xsd" />
+    <xs:import schemaLocation="familia.xsd" namespace="http://estg.ipp.pt/familia.xsd"></xs:import>
+    <xs:import schemaLocation="agendamentos.xsd" namespace="http://estg.ipp.pt/agendamentos.xsd"></xs:import>
+
+    <xs:element name="lista">
+        <xs:complexType>
+           <xs:sequence>
+               <xs:element name="agendamento" type="a:agendamento" minOccurs="1" maxOccurs="5000"></xs:element>
+           </xs:sequence> 
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

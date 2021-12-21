@@ -5,18 +5,18 @@ XMLNS >>> "LINK" ONDE PODEMOS IR BUSCAR O QUE FIZEMOS AQUI
 TARGETNAMESPACE>>> "LINK" ONDE VAMOS GUARDAR A INFORMAÇÃO
 ELEMENTFORMDEFAULT >>>> NÃO SEI-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
-            xmlns="http://estg.ipp.pt/commonTypes" 
-            targetNamespace="http://estg.ipp.pt/commonTypes" 
+            xmlns="http://estg.ipp.pt/commontypes.xsd" 
+            targetNamespace="http://estg.ipp.pt/commontypes.xsd" 
             elementFormDefault="qualified">
 
-<!-- AQUI VOU METER TODOS OS SIMPLETYPE COM RESTRIÇOES, OU QUE SERÃO OBRIGATORIOS -->
+<!-- TODOS OS SIMPLETYPE COM RESTRIÇOES, OU QUE SERÃO OBRIGATORIOS -->
 
 <!-- /////////////////////////////////////////////////////FAMILIA////////////////////////////////////////////////////////////////-->
 <!--____________________________TUDO O QUE É OBRIGATÓRIO ESCREVER (EX: CIDADE, NOMES, PAÍS________________________-->
 
 <xs:simpleType name="texto">
     <xs:restriction base="xs:string">
-        <xs:minLength value="1"></xs:minLength>
+        <xs:minLength value="3"></xs:minLength>
     </xs:restriction>
 </xs:simpleType>
 

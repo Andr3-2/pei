@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns="http://estg.ipp.pt/agendamentos"
-xsi:schemaLocation="http://estg.ipp.pt/agendamentos agendamentos.xsd"  
-xmlns:co="http://estg.ipp.pt/commontypes">
-
+xmlns="http://estg.ipp.pt/lista.xsd" 
+xsi:schemaLocation="http://estg.ipp.pt/lista.xsd lista.xsd" 
+xmlns:co="http://estg.ipp.pt/commontypes.xsd" 
+xmlns:f="http://estg.ipp.pt/familia.xsd" 
+xmlns:a="http://estg.ipp.pt/agendamentos.xsd">
     <agendamento>
-        <familia>
-            <numelementos>7</numelementos>
-            <pais>Espanha</pais>
-            <cidade>Barcelona</cidade>
-            <elementos>
-                <elemento>
-                    <nome>Joaquim</nome>
-                    <datanascimento>1998-01-01</datanascimento>
-                </elemento>
-                <elemento>
-                    <nome>Joaquim</nome>
-                    <datanascimento>1998-01-01</datanascimento>
-                </elemento>
-
-            </elementos>
-        </familia>
-        <data>2021-12-20</data>
+        <a:familia>
+            <f:numelementos>7</f:numelementos>
+            <f:pais>Espanha</f:pais>
+            <f:cidade>Barcelona</f:cidade>
+            <f:elementos>
+                <f:elemento>
+                    <co:nome>Joaquim</co:nome>
+                    <co:datanascimento>1998-01-01</co:datanascimento>
+                </f:elemento>
+                <f:elemento>
+                    <co:nome>Joaquim</co:nome>
+                    <co:datanascimento>1998-01-01</co:datanascimento>
+                </f:elemento>
+            </f:elementos>
+        </a:familia>
+        <a:data>2021-12-20</a:data>
     </agendamento>
-
 </lista>
