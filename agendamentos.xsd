@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EM BAIXO: 
+XMLNS:XS >>> É O QUE TEMOS QUE METER SEMPRE
+XMLNS >>> "LINK" ONDE PODEMOS IR BUSCAR O QUE FIZEMOS NOS OUTROS XSD
+TARGETNAMESPACE>>> "LINK" ONDE VAMOS GUARDAR A INFORMAÇÃO
+xlms:co e todos os outros >>>> "link" onde podemos ir buscar a informação que queremos usar aqui (neste caso foi preciso todos os "links")
+ELEMENTFORMDEFAULT >>>> NÃO SEI-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://estg.ipp.pt/agendamentos" 
+targetNamespace="http://estg.ipp.pt/agendamentos" 
+xmlns:co="http://estg.ipp.pt/commonTypes" 
+elementFormDefault="qualified">
+
+    <!-- xs:import schemaLocation "commonTypes.xsd>>>> vamos usar TODOS ESTES xsd, que tem a sua informaçao em NAMESPACE "LINK" que usamos para o identificar-->
+    <xs:import schemaLocation="commonTypes.xsd" namespace="http://estg.ipp.pt/commonTypes" />
+
+    <xs:element name="lista">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="agendamento" minOccurs="1" maxOccurs="5000">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="familia">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="numelementos" type="co:numelementos" minOccurs="1"></xs:element> 
+                                        <xs:element name="pais" type="co:texto" minOccurs="1"></xs:element> 
+                                        <xs:element name="cidade" type="co:texto" minOccurs="1"></xs:element> 
+                                        <xs:element name="elementos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="elemento" type="co:estelemento" minOccurs="2" maxOccurs="7"></xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="data" type="xs:date"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

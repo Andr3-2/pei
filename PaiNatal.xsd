@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Lista">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="agendamento" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nr_elementos_familia" type="xs:string" />
+                            <xs:element name="cidade" type="xs:string" />
+                            <xs:element name="data">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dia" type="xs:string" />
+                                        <xs:element name="mes" type="xs:string" />
+                                        <xs:element name="ano" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="horas">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="hora" type="xs:string" />
+                                        <xs:element name="minuto" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="membros">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="membro" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="nome" type="xs:string" />
+                                                    <xs:element name="nascimento">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="dia" type="xs:string" />
+                                                                <xs:element name="mes" type="xs:string" />
+                                                                <xs:element name="ano" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

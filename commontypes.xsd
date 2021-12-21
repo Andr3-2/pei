@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EM BAIXO: 
+XMLNS:XS >>> É O QUE TEMOS QUE METER SEMPRE
+XMLNS >>> "LINK" ONDE PODEMOS IR BUSCAR O QUE FIZEMOS AQUI
+TARGETNAMESPACE>>> "LINK" ONDE VAMOS GUARDAR A INFORMAÇÃO
+ELEMENTFORMDEFAULT >>>> NÃO SEI-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+            xmlns="http://estg.ipp.pt/commonTypes" 
+            targetNamespace="http://estg.ipp.pt/commonTypes" 
+            elementFormDefault="qualified">
+
+<!-- AQUI VOU METER TODOS OS SIMPLETYPE COM RESTRIÇOES, OU QUE SERÃO OBRIGATORIOS -->
+
+<!-- /////////////////////////////////////////////////////FAMILIA////////////////////////////////////////////////////////////////-->
+<!--____________________________TUDO O QUE É OBRIGATÓRIO ESCREVER (EX: CIDADE, NOMES, PAÍS________________________-->
+
+<xs:simpleType name="texto">
+    <xs:restriction base="xs:string">
+        <xs:minLength value="1"></xs:minLength>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- ___________________________NÚMERO MÁXIMO DE ELEMENTOS QUE UMA FAMÍLIA PODE TER__________________________________-->
+<xs:simpleType name="numelementos">
+    <xs:restriction base="xs:integer">
+        <xs:minInclusive value="2"></xs:minInclusive>
+        <xs:maxInclusive value="7"></xs:maxInclusive>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- ___________________________ESTRUTURA DE UM ELEMENTO DA FAMILIA_________________________________________________ -->
+
+<xs:complexType name="estelemento">
+    <xs:sequence>
+        <xs:element name="nome" type="texto"></xs:element>
+        <xs:element name="datanascimento" type="xs:date"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+
+</xs:schema>

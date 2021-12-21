@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://estg.ipp.pt/agendamentos"
+xsi:schemaLocation="http://estg.ipp.pt/agendamentos agendamentos.xsd"  
+xmlns:co="http://estg.ipp.pt/commontypes">
+
+    <agendamento>
+        <familia>
+            <numelementos>7</numelementos>
+            <pais>Espanha</pais>
+            <cidade>Barcelona</cidade>
+            <elementos>
+                <elemento>
+                    <nome>Joaquim</nome>
+                    <datanascimento>1998-01-01</datanascimento>
+                </elemento>
+                <elemento>
+                    <nome>Joaquim</nome>
+                    <datanascimento>1998-01-01</datanascimento>
+                </elemento>
+
+            </elementos>
+        </familia>
+        <data>2021-12-20</data>
+    </agendamento>
+
+</lista>
