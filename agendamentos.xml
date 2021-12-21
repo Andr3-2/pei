@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<lista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns="http://estg.ipp.pt/lista.xsd" 
-xsi:schemaLocation="http://estg.ipp.pt/lista.xsd lista.xsd" 
-xmlns:co="http://estg.ipp.pt/commontypes.xsd" 
-xmlns:f="http://estg.ipp.pt/familia.xsd" 
-xmlns:a="http://estg.ipp.pt/agendamentos.xsd">
+<lista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://estg.ipp.pt/lista.xsd" xsi:schemaLocation="http://estg.ipp.pt/lista.xsd lista.xsd"
+    xmlns:co="http://estg.ipp.pt/commontypes.xsd"
+    xmlns:f="http://estg.ipp.pt/familia.xsd"
+    xmlns:a="http://estg.ipp.pt/agendamentos.xsd">
     <agendamento>
         <a:familia>
             <f:numelementos>7</f:numelementos>
@@ -13,14 +12,28 @@ xmlns:a="http://estg.ipp.pt/agendamentos.xsd">
             <f:elementos>
                 <f:elemento>
                     <co:nome>Joaquim</co:nome>
-                    <co:datanascimento>1998-01-01</co:datanascimento>
+                    <co:datanascimento>
+                        <co:dia>1</co:dia>
+                        <co:mes>2</co:mes>
+                        <co:ano>2002</co:ano>
+                    </co:datanascimento>
                 </f:elemento>
                 <f:elemento>
                     <co:nome>Joaquim</co:nome>
-                    <co:datanascimento>1998-01-01</co:datanascimento>
+                    <co:datanascimento>
+                        <co:dia>1</co:dia>
+                        <co:mes>2</co:mes>
+                        <co:ano>2002</co:ano>
+                    </co:datanascimento>
                 </f:elemento>
             </f:elementos>
         </a:familia>
-        <a:data>2021-12-20</a:data>
+        <a:datas>
+            <a:data>
+                <co:dia>1</co:dia>
+                <co:mes>2</co:mes>
+                <co:ano>2002</co:ano>
+            </a:data>
+        </a:datas>
     </agendamento>
 </lista>

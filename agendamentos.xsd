@@ -14,7 +14,13 @@ elementFormDefault="qualified">
     <xs:complexType name="agendamento">
         <xs:sequence>
             <xs:element name="familia" type="f:familia" minOccurs="1"></xs:element>
-            <xs:element name="data" type="xs:date"></xs:element>
+            <xs:element name="datas">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="data" type="co:data" minOccurs="1" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
