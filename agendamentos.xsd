@@ -17,10 +17,19 @@ elementFormDefault="qualified">
             <xs:element name="datas">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="data" type="co:data" minOccurs="1" maxOccurs="5"/>
+                        <xs:element name="preferencia" >
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="data" type="co:data" minOccurs="0" maxOccurs="5"/>
+
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="data" type="co:data" maxOccurs="1"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
+        <xs:attribute name="id" type="xs:int" use="required"/>
     </xs:complexType>
 </xs:schema>
