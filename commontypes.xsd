@@ -28,6 +28,7 @@ ELEMENTFORMDEFAULT >>>> NÃO SEI-->
 
     <!-- ___________________________ESTRUTURA DE UM ELEMENTO DA FAMILIA_________________________________________________ -->
 
+<<<<<<< HEAD
     <xs:complexType name="estelemento">
         <xs:sequence>
             <xs:element name="nome" type="texto"></xs:element>
@@ -63,4 +64,6 @@ ELEMENTFORMDEFAULT >>>> NÃO SEI-->
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+=======
+>>>>>>> André
 </xs:schema>
