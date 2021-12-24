@@ -4,7 +4,7 @@
     xmlns:co="http://estg.ipp.pt/commontypes.xsd"
     xmlns:f="http://estg.ipp.pt/familia.xsd"
     xmlns:a="http://estg.ipp.pt/agendamentos.xsd">
-    <agendamento id="1">
+    <agendamento>
         <a:familia>
             <f:numelementos>7</f:numelementos>
             <f:pais>Espanha</f:pais>
@@ -29,23 +29,6 @@
             </f:elementos>
         </a:familia>
         <a:datas>
-            <a:preferencia>
-                <a:data>
-                    <co:dia>1</co:dia>
-                    <co:mes>2</co:mes>
-                    <co:ano>2002</co:ano>
-                </a:data>
-                <a:data>
-                    <co:dia>1</co:dia>
-                    <co:mes>2</co:mes>
-                    <co:ano>2002</co:ano>
-                </a:data>
-                <a:data>
-                    <co:dia>1</co:dia>
-                    <co:mes>2</co:mes>
-                    <co:ano>2002</co:ano>
-                </a:data>
-            </a:preferencia>
             <a:data>
                 <co:dia>1</co:dia>
                 <co:mes>2</co:mes>
