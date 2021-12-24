@@ -6,7 +6,7 @@ targetNamespace="http://estg.ipp.pt/agendamentos.xsd"
 xmlns:co="http://estg.ipp.pt/commontypes.xsd" 
 xmlns:f="http://estg.ipp.pt/familia.xsd" 
 elementFormDefault="qualified">
-
+<!-- Isto é um Teste-->
     <!-- xs:import schemaLocation "commonTypes.xsd>>>> vamos usar TODOS ESTES xsd, que tem a sua informaçao em NAMESPACE "LINK" que usamos para o identificar-->
     <xs:import schemaLocation="commontypes.xsd" namespace="http://estg.ipp.pt/commontypes.xsd" />
     <xs:import schemaLocation="familia.xsd" namespace="http://estg.ipp.pt/familia.xsd"></xs:import>
