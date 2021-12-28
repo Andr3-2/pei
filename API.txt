@@ -1,0 +1,8 @@
+API
+	Validar Documento XML
+	Registar Agendamentos
+	Apresentar o resultado da operação(Registar Agendamentos)
+	Gerar codigo de reserva automaticamente
+	
+	Verificar Disponibilidade(retornar os dias livres)
+	Cancelar uma reserva(return codigo de reserva)
