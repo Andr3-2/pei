@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://estg.ipp.pt/lista.xsd" xsi:schemaLocation="http://estg.ipp.pt/lista.xsd lista.xsd"
+    xmlns="http://estg.ipp.pt/lista.xsd"
+    xsi:schemaLocation="http://estg.ipp.pt/lista.xsd lista.xsd"
     xmlns:co="http://estg.ipp.pt/commontypes.xsd"
     xmlns:f="http://estg.ipp.pt/familia.xsd"
     xmlns:a="http://estg.ipp.pt/agendamentos.xsd">

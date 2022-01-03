@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 xmlns="http://estg.ipp.pt/agendamentos.xsd" 
 targetNamespace="http://estg.ipp.pt/agendamentos.xsd" 
 xmlns:co="http://estg.ipp.pt/commontypes.xsd" 

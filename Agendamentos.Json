@@ -1,0 +1,107 @@
+{
+    "lista": {
+        "agendamento": [{
+                "familia": {
+                    "numelementos": 7,
+                    "pais": "Espanha",
+                    "cidade": "Barcelona",
+                    "elementos": {
+                        "elemento": [{
+                                "nome": "Joaquim",
+                                "datanascimento": {
+                                    "dia": 1,
+                                    "mes": 2,
+                                    "ano": 2002
+                                }
+                            },
+                            {
+                                "nome": "Joaquim",
+                                "datanascimento": {
+                                    "dia": 1,
+                                    "mes": 2,
+                                    "ano": 2002
+                                }
+                            }
+                        ]
+                    }
+                },
+                "datas": {
+                    "preferencia": {
+                        "data": [{
+                                "dia": 1,
+                                "mes": 2,
+                                "ano": 2002
+                            },
+                            {
+                                "dia": 1,
+                                "mes": 2,
+                                "ano": 2002
+                            },
+                            {
+                                "dia": 1,
+                                "mes": 2,
+                                "ano": 2002
+                            }
+                        ]
+                    },
+                    "data": {
+                        "dia": 1,
+                        "mes": 2,
+                        "ano": 2002
+                    }
+                }
+            },
+            {
+                "familia": {
+                    "numelementos": 7,
+                    "pais": "Espanha",
+                    "cidade": "Barcelona",
+                    "elementos": {
+                        "elemento": [{
+                                "nome": "Joaquim",
+                                "datanascimento": {
+                                    "dia": 1,
+                                    "mes": 2,
+                                    "ano": 2002
+                                }
+                            },
+                            {
+                                "nome": "Joaquim",
+                                "datanascimento": {
+                                    "dia": 1,
+                                    "mes": 2,
+                                    "ano": 2002
+                                }
+                            }
+                        ]
+                    }
+                },
+                "datas": {
+                    "preferencia": {
+                        "data": [{
+                                "dia": 1,
+                                "mes": 2,
+                                "ano": 2002
+                            },
+                            {
+                                "dia": 1,
+                                "mes": 2,
+                                "ano": 2002
+                            },
+                            {
+                                "dia": 1,
+                                "mes": 2,
+                                "ano": 2002
+                            }
+                        ]
+                    },
+                    "data": {
+                        "dia": 1,
+                        "mes": 2,
+                        "ano": 2002
+                    }
+                }
+            }
+        ]
+    }
+}
